@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <title>Impressum</title>
+        <script>
+            window.addEventListener('scroll', function() {
+                var topDiv = document.querySelector('.topAppBar');
+                var contentOffsetTop = document.querySelector('.content').offsetTop;
+
+                if (window.pageYOffset > contentOffsetTop) {
+                    topDiv.classList.add('scrolled');
+                } else {
+                    topDiv.classList.remove('scrolled');
+                }
+            });
+        </script>
+        <style>
+            html {
+                overscroll-behavior: none;
+            }
+            
+            body {
+                background-color: rgb(253, 252, 245);
+                color: rgb(27, 28, 24);
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-size: 16px;
+            }
+
+            /* Dark mode styles */
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: rgb(27, 28, 24);
+                    color: rgb(227, 227, 219);
+                }
+            }
+
+            .topAppBar {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                background-color: rgb(253, 252, 245);
+                z-index: 9999;
+                text-align: center;
+                font-size: 22px;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 64px;
+                transition: background-color 0.3s ease;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .topAppBar {
+                    background-color: rgb(27, 28, 24);
+                }
+            }
+
+            .card {
+                max-width: 800px;
+                margin: 0 auto;
+                border-radius: 12px;
+                padding: 16px;
+                box-sizing: border-box;
+                border: 1px solid rgb(197, 200, 186);
+                color: rgb(68, 72, 61);
+                background-color: rgb(225, 228, 213);
+                margin-bottom: 16px;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .card {
+                    border: 1px solid rgb(68, 72, 61);
+                    color: rgb(197, 200, 186);
+                    background-color: rgb(68, 72, 61);
+                }
+            }
+
+            .card p {
+                margin-top: 2px;
+                margin-bottom: 0px;
+            }
+
+            .card p strong {
+                color: rgb(27, 28, 24);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .card p strong {
+                    color: rgb(227, 227, 219);
+                }
+            }
+
+            .title {
+                font-size: 22px;
+                margin-bottom: 2px;
+                color: rgb(27, 28, 24);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .title {
+                    color: rgb(227, 227, 219);
+                }
+            }
+
+            .subtitle {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                color: rgb(27, 28, 24);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .subtitle {
+                    color: rgb(227, 227, 219);
+                }
+            }
+
+            a {
+                color: rgb(67, 104, 20);
+                text-decoration: none;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                a {
+                    color: rgb(168, 212, 116);
+                }
+            }
+
+            .topAppBar.scrolled {
+                background-color: rgb(239, 241, 228);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .topAppBar.scrolled {
+                    background-color: rgb(37, 42, 31);
+                }
+            }
+
+            .content {
+                padding-top: 64px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topAppBar">
+            Datenschutzrichtlinie
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="title">Disclaimer - rechtliche Hinweise</div><div class="subtitle">Auskunfts- und Widerrufsrecht</div> <p>Sie haben jederzeit das Recht, sich unentgeltlich und unverz&#252;glich &#252;ber die zu Ihrer Person erhobenen Daten zu erkundigen. Ebenfalls k&#246;nnen Sie Ihre Zustimmung zur Verwendung Ihrer angegebenen pers&#246;nlichen Daten mit Wirkung f&#252;r die Zukunft widerrufen. Hierf&#252;r wenden Sie sich bitte an den im Impressum angegebenen Diensteanbieter.</p> <div class="subtitle">Datenschutz (allgemein)</div> <P>Beim Zugriff auf unsere Webseite werden automatisch allgemeine Informationen (sog. Server-Logfiles) erfasst. Diese beinhalten u.a. den von Ihnen verwendeten Webbrowser sowie Ihr Betriebssystem und Ihren Internet Service Provider. Diese Daten lassen keinerlei R&#252;ckschl&#252;sse auf Ihre Person zu und werden von uns statistisch ausgewertet, um unseren Internetauftritt technisch und inhaltlich zu verbessern. Das Erfassen dieser Informationen ist notwendig, um den Inhalt der Webseite korrekt ausliefern zu k&#246;nnen.</P> <P>Die Nutzung der Webseite ist grunds&#228;tzlich ohne Angabe personenbezogener Daten m&#246;glich. Soweit personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit m&#246;glich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdr&#252;ckliche Zustimmung nicht an Dritte weitergegeben.</P> <P>Sofern ein Vertragsverh&#228;ltnis begr&#252;ndet, inhaltlich ausgestaltet oder ge&#228;ndert werden soll oder Sie an uns eine Anfrage stellen, erheben und verwenden wir personenbezogene Daten von Ihnen, soweit dies zu diesem Zwecke erforderlich ist (Bestandsdaten). Wir erheben, verarbeiten und nutzen personenbezogene Daten soweit dies erforderlich ist, um Ihnen die Inanspruchnahme des Webangebots zu erm&#246;glichen (Nutzungsdaten). S&#228;mtliche personenbezogenen Daten werden nur solange gespeichert wie dies f&#252;r den genannten Zweck (Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags) erforderlich ist. Hierbei werden steuer- und handelsrechtliche Aufbewahrungsfristen von uns ber&#252;cksichtigt. Auf Anordnung der zust&#228;ndigen Stellen m&#252;ssen wir im Einzelfall Auskunft &#252;ber diese Daten (Bestandsdaten) erteilen, soweit dies f&#252;r Zwecke der Strafverfolgung, zur Gefahrenabwehr, zur Erf&#252;llung der gesetzlichen Aufgaben der Verfassungsschutzbeh&#246;rden oder des Milit&#228;rischen Abschirmdienstes oder zur Durchsetzung der Rechte am geistigen Eigentum erforderlich ist.</P> <P>Wir weisen ausdr&#252;cklich darauf hin, dass die Daten&#252;bertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitsl&#252;cken aufweisen kann. Vor dem Zugriff auf Daten kann nicht l&#252;ckenlos gesch&#252;tzt werden.</P> <P>Die Nutzung von im Rahmen der Impressumspflicht ver&#246;ffentlichten Kontaktdaten durch Dritte zur &#220;bersendung von nicht ausdr&#252;cklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdr&#252;cklich untersagt. Ausgenommen hiervon sind bestehende Gesch&#228;ftsbeziehungen bzw. es liegt Ihnen eine entsprechende Einwilligung von uns vor.</P> <P>Die Anbieter und alle auf dieser Website genannten Dritten behalten sich ausdr&#252;cklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen vor. Gleiches gilt f&#252;r die kommerzielle Verwendung und Weitergabe der Daten.</P> <div class="subtitle">Disclaimer (Haftungsausschluss)</div> <div class="subtitle">1. Haftung f&#252;r Inhalte</div> <p>Als Diensteanbieter sind wir gem&#228;&#223; &#167; 7 Abs. 1 TMG f&#252;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &#167;&#167; 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, &#252;bermittelte oder gespeicherte fremde Informationen zu &#252;berwachen oder nach Umst&#228;nden zu forschen, die auf eine rechtswidrige T&#228;tigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&#252;hrt. Eine diesbez&#252;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung m&#246;glich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p> <div class="subtitle">2. Haftung f&#252;r Links</div> <p>Diese Website enth&#228;lt Links zu externen Webseiten Dritter, auf deren Inhalte kein Einfluss genommen werden kann. Deshalb kann f&#252;r diese fremden Inhalte auch keine Gew&#228;hr &#252;bernommen werden. F&#252;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&#246;gliche Rechtsverst&#246;&#223;e &#252;berpr&#252;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige Links umgehend von dieser Website auf die rechtsverletzende Site entfernen.</p> <div class="subtitle">3. Urheberrecht</div> <p>Die durch die Diensteanbieter, deren Mitarbeiter und beauftragte Dritte erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielf&#228;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&#223;erhalb der Grenzen des Urheberrechtes bed&#252;rfen der vorherigen schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&#252;r den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden derartige Inhalte umgehend entfernen.</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; height: 64px">
+            <div style="display: flex;">
+                <a style="margin-right: 32px;" href="de_imprint.html">Impressum</a>
+                <a style="margin-right: 32px;" href="de_privacyPolicy.html">Datenschutzrichtlinie</a>
+                <a href="de_support.html">Hilfe</a>
+            </div>
+        </div>
+    </body>
+</html>
