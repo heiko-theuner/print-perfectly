@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Imprint</title>
+        <script>
+            function displayContactInformation() {
+                // Encoded strings
+                var encodedName = "&#72;&#101;&#105;&#107;&#111;&#32;&#84;&#104;&#101;&#117;&#110;&#101;&#114;";
+                var encodedAddress = "&#87;&#105;&#108;&#108;&#105;&#97;&#109;&#45;&#72;&#46;&#45;&#84;&#117;&#110;&#110;&#101;&#114;&#45;&#83;&#116;&#114;&#46;&#32;&#57;&#52;&#44;&#32;&#49;&#52;&#49;&#54;&#55;&#32;&#66;&#101;&#114;&#108;&#105;&#110;&#44;&#32;&#71;&#101;&#114;&#109;&#97;&#110;&#121;";
+                var encodedPhoneNumber = "&#43;&#52;&#57;&#32;&#49;&#53;&#49;&#32;&#54;&#56;&#32;&#57;&#54;&#32;&#57;&#53;&#32;&#50;&#52;";
+                var encodedEmail = "&#104;&#101;&#105;&#107;&#111;&#46;&#116;&#104;&#101;&#117;&#110;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;";
+
+                // Decode the strings
+                var decodedName = decodeString(encodedName);
+                var decodedAddress = decodeString(encodedAddress);
+                var decodedPhoneNumber = decodeString(encodedPhoneNumber);
+                var decodedEmail = decodeString(encodedEmail);
+
+                // Set the decoded values to the HTML elements
+                document.getElementById("name").innerText = decodedName;
+                document.getElementById("address").innerText = decodedAddress;
+                document.getElementById("phoneNumber").innerText = decodedPhoneNumber;
+                document.getElementById("email").innerText = decodedEmail;
+            }
+
+            function decodeString(encodedString) {
+                var textarea = document.createElement("textarea");
+                textarea.innerHTML = encodedString;
+                return textarea.value;
+            }
+
+            window.addEventListener('scroll', function() {
+                var topDiv = document.querySelector('.topAppBar');
+                var contentOffsetTop = document.querySelector('.content').offsetTop;
+
+                if (window.pageYOffset > contentOffsetTop) {
+                    topDiv.classList.add('scrolled');
+                } else {
+                    topDiv.classList.remove('scrolled');
+                }
+            });
+        </script>
+        <style>
+            html {
+                overscroll-behavior: none;
+            }
+
+            body {
+                background-color: rgb(253, 252, 245);
+                color: rgb(27, 28, 24);
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-size: 16px;
+                margin-right: 16px;
+                margin-left: 16px;
+            }
+
+            /* Dark mode styles */
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: rgb(27, 28, 24);
+                    color: rgb(227, 227, 219);
+                }
+            }
+
+            .topAppBar {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                background-color: rgb(253, 252, 245);
+                z-index: 9999;
+                text-align: center;
+                font-size: 22px;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 64px;
+                transition: background-color 0.3s ease;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .topAppBar {
+                    background-color: rgb(27, 28, 24);
+                }
+            }
+
+            .card {
+                max-width: 800px;
+                margin: 0 auto;
+                border-radius: 12px;
+                padding: 16px;
+                box-sizing: border-box;
+                border: 1px solid rgb(197, 200, 186);
+                color: rgb(68, 72, 61);
+                background-color: rgb(225, 228, 213);
+                margin-bottom: 16px;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .card {
+                    border: 1px solid rgb(68, 72, 61);
+                    color: rgb(197, 200, 186);
+                    background-color: rgb(68, 72, 61);
+                }
+            }
+
+            .card p {
+                margin-top: 2px;
+                margin-bottom: 0px;
+            }
+
+            .card p strong {
+                color: rgb(27, 28, 24);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .card p strong {
+                    color: rgb(227, 227, 219);
+                }
+            }
+
+            .title {
+                font-size: 22px;
+                margin-bottom: 2px;
+                color: rgb(27, 28, 24);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .title {
+                    color: rgb(227, 227, 219);
+                }
+            }
+
+            .subtitle {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                color: rgb(27, 28, 24);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .subtitle {
+                    color: rgb(227, 227, 219);
+                }
+            }
+
+            a {
+                color: rgb(67, 104, 20);
+                text-decoration: none;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                a {
+                    color: rgb(168, 212, 116);
+                }
+            }
+
+            .topAppBar.scrolled {
+                background-color: rgb(239, 241, 228);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .topAppBar.scrolled {
+                    background-color: rgb(37, 42, 31);
+                }
+            }
+
+            .content {
+                padding-top: 64px;
+            }
+        </style>
+    </head>
+    <body onload="displayContactInformation()">
+        <div class="topAppBar">
+            Imprint
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="title">Owner</div>
+                <div id="name"></div>
+                <div id="address"></div>
+                <div id="phoneNumber"></div>
+                <div id="email"></div>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center; height: 64px">
+            <div style="display: flex;">
+                <a style="margin-right: 32px;" href="en_imprint.html">Imprint</a>
+                <a style="margin-right: 32px;" href="en_privacyPolicy.html">Privacy Policy</a>
+                <a href="en_support.html">Help</a>
+            </div>
+        </div>
+
+    </body>
+</html>
