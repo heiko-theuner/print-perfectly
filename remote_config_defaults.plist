@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>deprecated_versions</key>
+	<string>["1.1.0", "1.1.1", "1.2.0"]</string>
+	<key>unsupported_versions</key>
+	<string>["1.0"]</string>
+	<key>imprint_urlformat</key>
+	<string>https://heiko-theuner.github.io/print-perfectly/{{language}}_imprint.html</string>
+	<key>appstore_url</key>
+	<string>itms-apps://itunes.apple.com/app/print-perfectly/id6449531757</string>
+	<key>privacy_policy_urlformat</key>
+	<string>https://heiko-theuner.github.io/print-perfectly/{{language}}_privacyPolicy.html</string>
+	<key>support_urlformat</key>
+	<string>https://heiko-theuner.github.io/print-perfectly/{{language}}_support.html</string>
+	<key>apple_Id</key>
+	<string>6449531757</string>
+</dict>
+</plist>
