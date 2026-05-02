@@ -1,9 +1,19 @@
 {
-  "deprecated_versions": ["1.1.0", "1.1.1", "1.2.0"],
-  "unsupported_versions": ["1.0"],
-  "imprint_urlformat": "https://heiko-theuner.github.io/print-perfectly/{{language}}_imprint.html",
-  "appstore_url": "itms-apps://itunes.apple.com/app/print-perfectly/id6449531757",
-  "privacy_policy_urlformat": "https://heiko-theuner.github.io/print-perfectly/{{language}}_privacyPolicy.html",
-  "support_urlformat": "https://heiko-theuner.github.io/print-perfectly/{{language}}_support.html",
-  "apple_Id": "6449531757"
+  "self": "https://heiko-theuner.github.io/homer/remote-configuration.json",
+  "common": {
+    "imprint_urlformat": "https://heiko-theuner.github.io/homer/{{language}}/imprint.html",
+    "privacy_policy_urlformat": "https://heiko-theuner.github.io/homer/{{language}}/privacy.html",
+    "support_urlformat": "https://heiko-theuner.github.io/homer/{{language}}/support.html"
+  },
+  "ios": {
+    "deprecated_versions": ["1.0.0", "1.0.1"],
+    "unsupported_versions": ["0.9.0"],
+    "appstore_url": "itms-apps://itunes.apple.com/app/homer/id1234567890",
+    "apple_id": "1234567890"
+  },
+  "android": {
+    "deprecated_versions": ["1.0.0", "1.0.1"],
+    "unsupported_versions": ["0.9.0"],
+    "playstore_url": "https://play.google.com/store/apps/details?id=theuner.heiko.homer"
+  }
 }
