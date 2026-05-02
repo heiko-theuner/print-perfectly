@@ -1,0 +1,9 @@
+{
+  "deprecated_versions": ["1.1.0", "1.1.1", "1.2.0"],
+  "unsupported_versions": ["1.0"],
+  "imprint_urlformat": "https://heiko-theuner.github.io/print-perfectly/{{language}}_imprint.html",
+  "appstore_url": "itms-apps://itunes.apple.com/app/print-perfectly/id6449531757",
+  "privacy_policy_urlformat": "https://heiko-theuner.github.io/print-perfectly/{{language}}_privacyPolicy.html",
+  "support_urlformat": "https://heiko-theuner.github.io/print-perfectly/{{language}}_support.html",
+  "apple_Id": "6449531757"
+}
