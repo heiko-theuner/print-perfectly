@@ -1,6 +1,5 @@
 {
-  "self": "https://heiko-theuner.github.io/homer/remote-configuration.json",
-  "common": {
+  "universal": {
     "imprint_urlformat": "https://heiko-theuner.github.io/homer/{{language}}/imprint.html",
     "privacy_policy_urlformat": "https://heiko-theuner.github.io/homer/{{language}}/privacy.html",
     "support_urlformat": "https://heiko-theuner.github.io/homer/{{language}}/support.html"
