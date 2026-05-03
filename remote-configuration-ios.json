@@ -1,0 +1,9 @@
+{
+  "imprint_urlformat": "https://heiko-theuner.github.io/homer/{{language}}/imprint.html",
+  "privacy_policy_urlformat": "https://heiko-theuner.github.io/homer/{{language}}/privacy.html",
+  "support_urlformat": "https://heiko-theuner.github.io/homer/{{language}}/support.html",
+  "deprecated_versions": ["1.0.0", "1.0.1"],
+  "unsupported_versions": ["0.9.0"],
+  "store_url": "itms-apps://itunes.apple.com/app/homer/id1234567890",
+  "apple_id": "1234567890"
+}
